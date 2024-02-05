@@ -32,6 +32,8 @@ def get_fruityvice_data(this_fruit_choice):
         return fruityvice_normalized
 
 #new section to display fruityvice api response
+back_from_function = get_fruityvice_data(fruit_choice)
+streamlit.dataframe(back_from_function)
 streamlit.header("Fruityvice Fruit Advice!")
 try:
     fruit_choice = streamlit.text_input('What fruit would you like information about?')
@@ -43,10 +45,7 @@ try:
 
 except URLError as e:
     streamlit.error()
-#streamlit.write('The user entered ', fruit_choice)
 
-# show normalized table
-#streamlit.dataframe(fruityvice_normalized)
 
 streamlit.stop()
 

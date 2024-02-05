@@ -32,9 +32,6 @@ def get_fruityvice_data(this_fruit_choice):
         return fruityvice_normalized
 
 #new section to display fruityvice api response
-back_from_function = get_fruityvice_data(fruit_choice)
-
-streamlit.dataframe(back_from_function)
 streamlit.header("Fruityvice Fruit Advice!")
 
 try:

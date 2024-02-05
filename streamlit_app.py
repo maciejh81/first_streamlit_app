@@ -42,10 +42,10 @@ try:
 
 except URLError as e:
   streamlit.error()
-streamlit.write('The user entered ', fruit_choice)
+#streamlit.write('The user entered ', fruit_choice)
 
 # show normalized table
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 
 streamlit.stop()
 
